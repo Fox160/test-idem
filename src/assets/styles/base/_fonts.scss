@@ -1,0 +1,32 @@
+/* src/assets/styles/base/_fonts.scss  */
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: normal;
+  src: url("@~fonts/Roboto/Roboto-Regular.eot");
+  src: local("☺"), url("@~fonts/Roboto/Roboto-Regular.woff") format("woff"),
+    url("@~fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+$roboto: "Roboto", sans-serif;
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: bold;
+  src: url("@~fonts/ProximaNova/ProximaNova-Bold.eot");
+  src: local("☺"),
+    url("@~fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"),
+    url("@~fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+}
+
+$proximaNova: "Proxima Nova", sans-serif;
+
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: normal;
+  src: url("@~fonts/NotoSans/NotoSans-Regular.eot");
+  src: local("☺"), url("@~fonts/NotoSans/NotoSans-Regular.woff") format("woff"),
+    url("@~fonts/NotoSans/NotoSans-Regular.ttf") format("truetype");
+}
+
+$notoSans: "Noto Sans", sans-serif;

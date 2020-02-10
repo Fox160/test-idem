@@ -1,0 +1,35 @@
+//- Master layout
+
+doctype html
+html(lang='ru')
+  head
+
+    //- Meta
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+
+    meta(name='msapplication-TileColor', content='#0E0E0E')
+    meta(name='theme-color', content='#0E0E0E')
+
+    //- Preload fonts
+    link(type='font/woff', href=require('source/assets/fonts/Roboto/Roboto-Regular.woff'), rel='preload', as='font', crossorigin)
+    link(type='font/woff', href=require('source/assets/fonts/ProximaNova/ProximaNova-Bold.woff'), rel='preload', as='font', crossorigin)
+    link(type='font/woff', href=require('source/assets/fonts/NotoSans/NotoSans-Regular.woff'), rel='preload', as='font', crossorigin)
+
+
+    //- Title
+    block title
+      title Тестовое задание
+
+    //- Manifest browserconfig files
+    block manifestBrowserconfigFiles
+      link(rel='manifest', href='./manifest.json')
+      meta(name='msapplication-config' content='./browserconfig.xml')
+
+  body
+    //- block content
+    block content
+
+    //- block scripts
+    block scripts

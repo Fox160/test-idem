@@ -1,0 +1,44 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - Frame
+
+block manifestBrowserconfigFiles
+  link(rel='manifest', href='../manifest.json')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+  .wrapper--img
+    .dialog
+      .dialog__message.dialog__message--friend
+        .message__icon.message__icon--friend
+        .message__text.message__text--friend
+          p Это означает, что в Вашем доме, офисе, кабинете, мастерской хранятся ценности бóльшие, чем просто деньги или драгоценности, - культурные ценности. Произведения искусства, антиквариат, иные предметы коллекционирования – все это имущество, безусловно высокая стоимость которого.
+
+      .dialog__message.dialog__message--self
+        .message__icon.message__icon--self
+        .message__text.message__text--self
+          p Это означает,
+
+      .dialog__message.dialog__message--friend
+        .message__icon.message__icon--friend
+        .message__text.message__text--friend
+          p доме, офисе, кабинете, мастерской
+
+      .dialog__date
+        span 21 октября 2017
+
+      .dialog__message.dialog__message--self
+        .message__icon.message__icon--self
+        .message__text.message__text--self
+          p Это означает,
+
+      .dialog__message.dialog__message--friend
+        .message__icon.message__icon--friend
+        .message__text.message__text--friend
+          p доме, офисе, кабинете, мастерской
+
+    .form.form--wrapper
+      form(action="", method="")
+        textarea.form__textarea(name="", cols="30", rows="6") Cowkeifjowefwehifuhqiwuehfqwef wef
+        button.form__button(type='submit') Отправить
