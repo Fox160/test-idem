@@ -1,7 +1,7 @@
 extends ./layouts/master.pug
 
 block title
-  title Test IDEM
+  title Test Idem
 
 block manifestBrowserconfigFiles
   link(href='../manifest.json', rel='manifest')
@@ -13,74 +13,57 @@ block content
   header header
 
   .wrapper
-    .box1
-      .box1__block.box1__block--square.block--darkgray.block--lg
+    .box.box1
+      .box1__block.block--darkgray.block--lg
         p Гений непредвзято понимает под собой конфликт. Закон внешнего мира, очевидно, реально подчеркивает аксиоматичный здравый смысл. Культ джайнизма включает в себя поклонение Махавире и другим тиртханкарам, поэтому закон исключённого третьего индуцирует изоморфный ротор.
 
-      .box1__block.box1__block--square.block--darkgray.block--md
+      .box1__block.block.block--darkgray
         p Чувство однократно
 
-      .box1__block.box1__block--square.block--darkgray.block--md
+      .box1__block.block.block--darkgray
         p Морено
 
-    .box2
-      .box2__block.block--lightgray
+    .box.box--sm.box2
+      .box2__block.block.block--lightgray
         p Наши сотрудники
 
-      .box2__block.block--lightgray
+      .box2__block.block.block--lightgray
         p Просветляет понимающий тест
 
-      .box2__block.block--lightgray.block--lg
+      .box2__block.block.block--lightgray.block--lg
         p Конформизм
 
-      .box2__block.block--blue
+      .box2__block.block.block--blue
         p Интроекция
 
-      .box2__block.block--yellow
+      .box2__block.block.block--yellow
         p Наши сотрудники
 
-    .box3
-        .block--square.block--green.block--md
+    .box.box3
+        .box3__block.block.block--green
           p Понятие модернизации понимает механизм власти
 
-        .block--square.block--img.block--md
+        .box3__block.block.block--img
           p Наши сотрудники
           .block__figure
             p !
 
+        include ./components/list.pug
 
-        .block--square.block--green.block--lg
-          ul.info-list
-            li.info-list__item
-              span.key Фамилия
-              span.value Мамай
-            li.info-list__item
-              span.key Имя и Отчество
-              span.value Станиславаленина Владимировна
-            li.info-list__item
-              span.key Номер полиса выдан заведомо ложный
-              span.value 01354879
-            li.info-list__item
-              span.key Дата рождения
-              span.value 01.12.1976
-            li.info-list__item
-              span.key Телефон
-              span.value +79254218069
-
-    .box4
-      .box4__block.block--orange
+    .box.box--sm.box4
+      .box4__block.block.block--orange
         p Лидерство
 
-      .box4__block.block--orange
+      .box4__block.block.block--orange
         p Однако
 
-      .box4__block.block--orange
+      .box4__block.block.block--orange
         p Точка перегиба
 
-      .box4__block.block--red
+      .box4__block.block.block--red
         p Невероятный гений
 
-      .box4__block.block--purple
+      .box4__block.block.block--purple
         p Длина вектора
 
   //- Footer

@@ -1,0 +1,29 @@
+.form {
+  border-top: 1px solid $white;
+  padding: 20px 41px 30px 20px;
+
+  &__textarea {
+    font-family: $notoSans;
+    font-size: 14px;
+    line-height: 19.07px;
+    text-align: left;
+    vertical-align: top;
+    resize: none;
+    width: 100%;
+    color: $midnightgray;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+  }
+
+  &__button {
+    font-family: $proximaNova;
+    cursor: pointer;
+    background-color: $darkblue;
+    color: $white;
+    border: 1px solid transparent;
+    border-radius: 21px;
+    padding: 10px 22px;
+  }
+}

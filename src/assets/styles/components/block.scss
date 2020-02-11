@@ -1,0 +1,95 @@
+.block {
+  display: inline-flex;
+  align-items: flex-end;
+  padding: 15px;
+
+  &--darkgray {
+    background-color: $darkgray;
+    color: $white;
+  }
+
+  &--lightgray {
+    background-color: $lightgray;
+  }
+
+  &--blue {
+    background-color: $blue;
+  }
+
+  &--yellow {
+    background-color: $yellow;
+  }
+
+  &--green {
+    background-color: $green;
+  }
+
+  &--orange {
+    background-color: $orange;
+  }
+
+  &--red {
+    grid-row-start: 2;
+    background-color: $red;
+  }
+
+  &--purple {
+    background-color: $purple;
+  }
+
+  &--lg {
+    @include gridPosition(
+      $rowStart: 1,
+      $rowEnd: 3,
+      $columnStart: 1,
+      $columnEnd: 3
+    );
+  }
+
+  &--img {
+    @include bgImage(
+      "../images/box-background.png",
+      $position: left 10% bottom 20%
+    );
+    position: relative;
+    color: $white;
+    cursor: pointer;
+    filter: blur(0);
+    transition: filter 0.3s ease-out;
+
+    &:hover {
+      filter: blur(3px);
+      transition: filter 0.3s ease-out;
+    }
+
+    &:hover {
+      .block__figure {
+        filter: blur(0);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__figure {
+    position: relative;
+    bottom: 35%;
+    right: 5vw;
+    border: 1px solid $white;
+    border-radius: 50%;
+    background-color: $white;
+    height: 60px;
+    width: 60px;
+    color: red;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+
+    p {
+      position: relative;
+      top: 30%;
+      font-size: 36px;
+    }
+  }
+}

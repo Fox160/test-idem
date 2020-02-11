@@ -1,29 +1,31 @@
-@import 'normalize.css';
+@import "normalize.css";
 
 /*
   Base
 */
-@import './base/fonts';
+@import "./base/fonts";
 
 /*
   Utils
 */
-@import './utils/dimensions';
-@import './utils/mixins';
-@import './utils/colors';
-@import './utils/keyframes';
+@import "./utils/dimensions";
+@import "./utils/mixins";
+@import "./utils/colors";
 
 /*
   Components
 */
+@import "./components/block.scss";
+@import "./components/list.scss";
+@import "./components/form.scss";
 
 /*
   Layout
 */
-@import './layout/general';
+@import "./layout/general";
 
 /*
   Pages
 */
-@import './pages/index';
-@import './pages/frame';
+@import "./pages/index";
+@import "./pages/frame";

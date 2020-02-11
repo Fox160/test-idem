@@ -8,7 +8,7 @@ block manifestBrowserconfigFiles
   meta(name='msapplication-config' content='../browserconfig.xml')
 
 block content
-  .wrapper--img
+  .container
     .dialog
       .dialog__message.dialog__message--friend
         .message__icon.message__icon--friend
@@ -38,7 +38,6 @@ block content
         .message__text.message__text--friend
           p доме, офисе, кабинете, мастерской
 
-    .form.form--wrapper
-      form(action="", method="")
-        textarea.form__textarea(name="", cols="30", rows="6") Cowkeifjowefwehifuhqiwuehfqwef wef
-        button.form__button(type='submit') Отправить
+    form.form(action="", method="")
+      textarea.form__textarea(name="", cols="30", rows="6") Cowkeifjowefwehifuhqiwuehfqwef wef
+      button.form__button(type='submit') Отправить

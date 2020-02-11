@@ -1,9 +1,8 @@
-.wrapper--img {
-  font-size: 14px;
-  line-height: 24px;
+.container {
   margin: 45px auto 80px;
   width: 650px;
   min-width: 650px;
+  line-height: 24px;
 
   @include bgImage(
     "../images/frame-background.png",
@@ -21,7 +20,6 @@
       display: flex;
       flex-flow: row wrap;
       align-items: flex-start;
-
       margin-bottom: 20px;
 
       &:last-child {
@@ -49,7 +47,6 @@
 
         width: 47px;
         height: 47px;
-        align-self: start;
 
         &--self {
           margin-left: 20px;
@@ -61,14 +58,14 @@
       }
 
       .message__text {
+        position: relative;
         max-width: 78%;
-        line-height: 24px;
         width: fit-content;
         padding: 15px;
         border-radius: 5px;
         background-color: $graywhite;
-        position: relative;
 
+        // Message triangle
         &--friend::after,
         &--self::after {
           content: "";
@@ -98,7 +95,7 @@
     }
 
     &__date {
-      overflow: hidden;
+      font-size: 14px;
       text-align: center;
 
       span {
@@ -124,37 +121,6 @@
           left: 100%;
         }
       }
-    }
-  }
-
-  .form {
-    overflow: hidden;
-    border-top: 1px solid #fff;
-    padding: 20px 41px 30px 20px;
-
-    &__textarea {
-      font-family: $notoSans;
-      font-size: 14px;
-      line-height: 19.07px;
-      text-align: left;
-      vertical-align: top;
-      resize: none;
-      width: 100%;
-      color: $midnightgray;
-      border-radius: 4px;
-      margin-bottom: 20px;
-      border: 1px solid #dbdbdb;
-      padding: 10px;
-    }
-
-    &__button {
-      font-family: $proximaNova;
-      cursor: pointer;
-      background-color: $darkblue;
-      color: $white;
-      border: 1px solid transparent;
-      border-radius: 21px;
-      padding: 10px 22px;
     }
   }
 }

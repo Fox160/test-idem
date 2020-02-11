@@ -8,6 +8,25 @@
   flex-wrap: $wrap;
 }
 
+@mixin isGrid($columns, $rows, $gap: "") {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  grid-gap: unquote($gap);
+}
+
+@mixin gridPosition(
+  $rowStart: "",
+  $columnStart: "",
+  $rowEnd: "",
+  $columnEnd: ""
+) {
+  grid-row-start: unquote($rowStart);
+  grid-row-end: unquote($rowEnd);
+  grid-column-start: unquote($columnStart);
+  grid-column-end: unquote($columnEnd);
+}
+
 @mixin bgImage($url, $repeat: no-repeat, $position: center, $size: initial) {
   background-image: url($url);
   background-repeat: $repeat;
